@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.container {
+    position: absolute;
+    left: 17%;
+    bottom: 40%;
+    height: 500px;
+    margin: -180px;
+    background: #fff;
+    padding: 0;
+    border-radius: 7px;
+}
+
+.contact-btn {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.contact-btn:after {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+.profile {
+    flex: 0 1 auto;
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+
+.profile-left {
+    flex: 0 1 auto;
+    padding: 8px;
+}
+
+.myName {
+    position: relative;
+    left: 5%;
+}
+
+.no-gutters {
+    padding: 0 !important;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.profile--right {
+    float: right;
+}
+
+.profile--right1 {
+    position: relative;
+    left: 12%;
+}
+
+
+.profile--right i:hover {
+    color: #573b8a;
+    cursor: pointer;
+}
+
+.profile--right1 i:hover {
+    color: #573b8a;
+    cursor: pointer;
+}
+
+.search-box {
+    flex: 0 1 auto;
+    background: #fafafa;
+    padding: 10px 13px;
+}
+
+.search-box .input-wrapper {
+    background: #fff;
+    border-radius: 40px;
+}
+
+.search-box .input-wrapper i {
+    color: gray;
+    margin-left: 7px;
+}
+
+.chatInputs {
+    border: none;
+    border-radius: 30px;
+    width: 80%;
+    margin: 0 10px;
+    padding: 6px 2px;
+}
+
+
+input::placeholder {
+    color: rgba(75, 72, 72, 0.66);
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.contact {
+    padding: 10px 15px;
+    display: flex;
+    vertical-align: baseline;
+    background: #fff;
+    transition: .3s ease;
+}
+
+.contact--grey {
+    background: #eee;
+}
+
+.contact .text {
+    margin-left: 12px;
+    width: 70%;
+}
+
+.contact .text h6 {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.contact .text p {
+    margin: 0;
+}
+
+.contact .time {
+    color: gray;
+}
+
+.contact--onhover:hover {
+    background: #6b4aa8;
+    cursor: pointer;
+}
+
+.contact--onhover:hover .time,
+.contact--onhover:hover .date,
+.contact--onhover:hover .text p,
+.contact--onhover:hover .text h6 {
+    color: #fff !important;
+}
+
+hr {
+    margin: 5px auto;
+    width: 95%;
+}
+
+.chat-bubble {
+    white-space: normal;
+    padding: 10px 14px;
+    background: #eee;
+    margin: 15px 20px;
+    border-radius: 9px;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+    word-wrap: break-word;
+    max-width: 80%;
+    text-align: left;
+}
+
+.chat-bubble:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 0;
+    margin-top: -10px;
+}
+
+.chat-bubble--left:after {
+    left: 0;
+    border-right-color: #eee;
+    border-left: 0;
+    margin-left: -20px;
+}
+
+.chat-bubble--right:after {
+    right: 0;
+    border-left-color: #573b8a;
+    border-right: 0;
+    margin-right: -20px;
+}
+
+.chat-bubble--right {
+    /*float: left;*/
+    max-width: 80%;
+    position: relative;
+    display: table;
+    margin-left: auto;
+    word-break: break-word;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.offset-md-3 .chat-bubble {
+    right: 0;
+    background: #573b8a;
+    color: #fff;
+}
+
+.chat-window-tray {
+    background: #eee;
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    border-radius: 10px;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.chatInputs {
+    margin: 0 10px;
+    padding: 6px 2px;
+    text-indent: 5px !important;
+}
+
+i {
+    color: gray;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+i:last-of-type {
+    margin-left: 25px;
+}
+
+.time, .date {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #573b8a;
+    outline: #6b4aa8;
+}
+
+.btn-primary:hover {
+    background: #6b4aa8;
+    outline: none;
+}
+
+.full-container {
+    height: 100%;
+}
+
+.chat-tray-container {
+    padding: 0;
+    margin: 0;
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+.message-container {
+    flex: 1 1 auto;
+    background: url(https://wallpaper.dog/large/5461314.jpg);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.bubble-container {
+    height: 20%;
+}
+
+.col-md-3 {
+    display: inline-flex;
+}
+
+.col-md-9 {
+    display: inline-flex;
+}
+
+.col-md-8 {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.col-12 {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.col-md-4 {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.border-right {
+    border-right: 1px solid #dee2e6 !important;
+}
+
+.signOut-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.contactList {
+    flex: 1 1 auto;
+    overflow-y: scroll;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 89%;
+}
