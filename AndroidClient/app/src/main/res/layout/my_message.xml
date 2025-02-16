@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+    <TextView
+            android:id="@+id/tvMessageContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_background"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="This is a text message"/>
+
+    <TextView
+            android:id="@+id/tvTimeAndDate"
+            android:layout_width="214dp"
+            android:layout_height="39dp"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessageContent"
+            tools:text="This is the time and date the message was sent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

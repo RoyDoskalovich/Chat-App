@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+
+    <color name="signUpBackground">#3B0D8A</color>
+    <color name="lightGrey">#EDEDED</color>
+    <color name="chatBackground">#5A5A5A</color>
+    <color name="linkColor">#2196F3</color>
+    <color name="chat_background">#00BCD4</color>
+    <color name="profile_wrap_background">#312B3A</color>
+
+
+</resources>

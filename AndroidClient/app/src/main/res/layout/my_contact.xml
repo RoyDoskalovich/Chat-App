@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_margin="1dp"
+                                                   android:background="@color/signUpBackground"
+                                                   android:padding="10dp">
+
+    <ImageView
+            android:id="@+id/tvContactPic"
+            android:layout_width="100dp"
+            android:layout_height="98dp"
+            android:scaleType="centerCrop"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-2dp"/>
+
+    <TextView
+            android:id="@+id/tvContactName"
+            android:textSize="20sp"
+            android:layout_width="143dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.152"
+            app:layout_constraintStart_toEndOf="@+id/tvContactPic"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:text="This is the contacts name"/>
+
+    <TextView
+            android:id="@+id/tvLastMsgContent"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="47dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvContactPic"
+            app:layout_constraintTop_toBottomOf="@+id/tvContactName"
+            tools:ignore="MissingConstraints"
+            tools:text="This is the content of the last message was sent"/>
+
+    <TextView
+            android:id="@+id/tvLastMsgCreated"
+            android:layout_width="139dp"
+            android:layout_height="34dp"
+            android:textColor="@color/chat_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.846"
+            app:layout_constraintStart_toEndOf="@+id/tvLastMsgContent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="92dp"
+            tools:text="This is the time and date the last message was sent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
